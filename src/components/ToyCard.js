@@ -1,12 +1,13 @@
 import React from "react";
 
-function ToyCard() {
+function ToyCard(toy) {
+  const {id,name,image,likes}=toy
   return (
     <div className="card">
-      <h2>{"" /* Toy's Name */}</h2>
+      <h2>{toy.name}</h2>
       <img
-        src={"" /* Toy's Image */}
-        alt={"" /* Toy's Name */}
+        src={toy.image}
+        alt={toy.Name}
         className="toy-avatar"
       />
       <p>{"" /* Toy's Likes */} Likes </p>
